@@ -2243,7 +2243,7 @@ export default function GyltWrapped() {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white font-bold text-xs">📞</span>
+                    <span className="text-white font-bold text-xs">ORG</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-800">Orange</h3>
                 </div>
@@ -2304,7 +2304,7 @@ export default function GyltWrapped() {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white font-bold text-xs">📞</span>
+                    <span className="text-white font-bold text-xs">FRE</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-800">Free</h3>
                 </div>
