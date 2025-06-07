@@ -1005,7 +1005,7 @@ export default function GyltWrapped() {
                     ? `Économiser ${category.amount}€ maintenant`
                     : category.category === "Livraisons"
                       ? "Réduire mes livraisons"
-                      : "Changer d'habitude"}
+                      : "Changer maintenant"}
                 </motion.button>
               </div>
             </motion.div>
@@ -2105,10 +2105,10 @@ export default function GyltWrapped() {
           >
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white font-bold text-xs">TM</span>
+                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center mr-2">
+                  <span className="text-white font-bold text-xs">SFR</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">TéléMobile Eco</h3>
+                <h3 className="text-xl font-bold text-gray-800">SFR</h3>
               </div>
               <div className="bg-[#4ECDC4] text-black text-xs px-3 py-1 rounded-full">-40%</div>
             </div>
@@ -2243,7 +2243,7 @@ export default function GyltWrapped() {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white font-bold text-xs">⚡</span>
+                    <span className="text-white font-bold text-xs">📞</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-800">Orange</h3>
                 </div>
@@ -2267,7 +2267,7 @@ export default function GyltWrapped() {
                   <div className="w-5 h-5 rounded-full bg-[#FFB347] flex items-center justify-center mr-2">
                     <span className="text-white font-bold text-xs">✓</span>
                   </div>
-                  <p className="text-gray-700 text-sm">Roaming Europe inclus</p>
+                  <p className="text-gray-700 text-sm">Avec Engagement (25,99 après 1 an)</p>
                 </div>
               </div>
 
@@ -2304,7 +2304,7 @@ export default function GyltWrapped() {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white font-bold text-xs">🚗</span>
+                    <span className="text-white font-bold text-xs">📞</span>
                   </div>
                   <h3 className="text-xl font-bold text-gray-800">Free</h3>
                 </div>
