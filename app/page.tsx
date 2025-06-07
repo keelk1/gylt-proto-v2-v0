@@ -664,8 +664,8 @@ export default function GyltWrapped() {
         amount: 15,
         difficulty: "Facile",
         items: [
-          { name: "Partager Netflix/ Spotify", amount: 10 }
-          { name: "Annuler un abonnement inutilisé", amount: 5 }
+          { name: "Partager Netflix/ Spotify", amount: 10 },
+          { name: "Annuler un abonnement inutilisé", amount: 5 },
         ],
       },
       {
@@ -678,9 +678,7 @@ export default function GyltWrapped() {
         category: "Énergie (Électricité/Gaz)",
         amount: 25,
         difficulty: "Difficile",
-        items: [
-          { name: "Changer de fournisseur d'énergie)", amount: 25 }
-        ],
+        items: [{ name: "Changer de fournisseur d'énergie)", amount: 25 }],
       },
     ],
     savingsSummary: [
