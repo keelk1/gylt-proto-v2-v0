@@ -705,7 +705,7 @@ export default function GyltWrapped() {
     const content = {
       totalSpentRoast: "C'est ce que tu as cramé en mars. Ton compte en banque mérite des excuses...",
       totalSpentGentle: "C'est ce que tu as dépensé en mars. Un mois bien rempli !",
-      topCategoryRoast: "Tu as englouti 20% de ton budget en livraisons. Pas besoin de cuisine apparament.",
+      topCategoryRoast: "T'as encore cramé 20% de ton fric là-dedans. Pas besoin de cuisine apparament...",
       topCategoryGentle: "Tu as consacré 20% de ton budget aux livraisons. Une préférence marquée !",
       economiesRoast: "Voilà ce que tu aurais pu économiser si tu faisais attention. Mais bon...",
       economiesGentle: "Voici ton potentiel d'économies pour les mois à venir !",
@@ -1399,7 +1399,7 @@ export default function GyltWrapped() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            {toneChoice === "roast" ? "Ton argent cramé" : "Tes dépenses totales"}
+            {toneChoice === "roast" ? "Bah alors ? T'as Flambé ?" : "Tes dépenses totales"}
           </motion.p>
 
           <motion.div
@@ -1710,13 +1710,13 @@ export default function GyltWrapped() {
             <p className="text-black text-lg">{getPersonalityDesc()}</p>
 
             <motion.div
-              className="mt-6 inline-block bg-black text-white text-xs px-3 py-1 rounded-full"
+              className="mt-6 inline-block bg-red text-white text-xs px-3 py-1 rounded-full"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1 }}
               whileHover={{ scale: 1.1 }}
             >
-              {toneChoice === "roast" ? "Profil à risque" : "Profil équilibré"}
+              {toneChoice === "roast" ? "Profil à risque !" : "Profil équilibré !"}
             </motion.div>
           </motion.div>
         </div>
@@ -1860,7 +1860,7 @@ export default function GyltWrapped() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
           >
-            <p className="text-xl text-[#7DE3A0] font-medium">Économies Potentielles</p>
+            <p className="text-xl text-[#7DE3A0] font-medium">Ce que tu peux économiser:</p>
             <motion.p
               className="text-5xl font-bold text-white"
               animate={{
