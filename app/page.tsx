@@ -630,64 +630,63 @@ export default function GyltWrapped() {
     topCategoryAmount: 245.9,
     topVendor: "Uber Eats",
     topVendorAmount: 110,
-    potentialSavings: 202.45,
+    potentialSavings: 85,
     gyltScore: 72,
     nextMonthGoal: "Réduire les livraisons de 20 €",
     categories: [
       { name: "Loyer", value: 650, color: "#6A0572", percentage: 59 },
       { name: "Livraisons", value: 245.9, color: "#FF6B6B", percentage: 22 },
       { name: "Achats", value: 159, color: "#FFD166", percentage: 14 },
-      { name: "Abonnements", value: 47.99, color: "#4ECDC4", percentage: 4 },
+      { name: "Forfait Téléphone/ Internet", value: 47.99, color: "#4ECDC4", percentage: 4 },
     ],
     vendors: [
       { name: "Uber Eats", value: 110, category: "Livraisons" },
       { name: "Domino's Pizza", value: 45.9, category: "Livraisons" },
       { name: "Sushi Shop", value: 90, category: "Livraisons" },
-      { name: "Netflix", value: 17.99, category: "Abonnements" },
-      { name: "Spotify", value: 9.99, category: "Abonnements" },
+      { name: "Netflix", value: 17.99, category: "Abonnement" },
+      { name: "Spotify", value: 9.99, category: "Abonnement" },
     ],
     spendingPersonality: "Carpe Diem",
     month: "mars",
     year: "2025",
     savingsDetails: [
       {
-        category: "Abonnements",
-        amount: 29,
+        category: "Forfait Téléphone/ Internet",
+        amount: 20,
         difficulty: "Facile",
         items: [
-          { name: "Netflix (partage possible)", amount: 9 },
-          { name: "Amazon Prime (optionnel)", amount: 20 },
+          { name: "Changer d'opérateur mobile", amount: 12 },
+          { name: "Optimiser l'offre internet", amount: 8 },
         ],
       },
       {
-        category: "Livraisons",
-        amount: 45,
+        category: "Abonnement divers",
+        amount: 15,
         difficulty: "Facile",
-        items: [{ name: "Commander moins souvent ou Click&Collect", amount: 45 }],
+        items: [
+          { name: "Partager Netflix/ Spotify", amount: 10 }
+          { name: "Annuler un abonnement inutilisé", amount: 5 }
+        ],
       },
       {
-        category: "Achats impulsifs",
-        amount: 50,
+        category: "Assurances",
+        amount: 25,
         difficulty: "Moyen",
-        items: [{ name: "AliExpress, Shein – à reporter ou planifier", amount: 50 }],
+        items: [{ name: "Renégocier assurance auto/habitation", amount: 25 }],
       },
       {
-        category: "Options bancaires",
-        amount: 30,
+        category: "Énergie (Électricité/Gaz)",
+        amount: 25,
         difficulty: "Difficile",
-        items: [{ name: "Cartes ou assurances inutilisées", amount: 30 }],
-      },
-      {
-        category: "Énergie / forfaits",
-        amount: 48.45,
-        difficulty: "Difficile",
-        items: [{ name: "Offres plus compétitives (gaz/élec/mobile)", amount: 48.45 }],
+        items: [
+          { name: "Changer de fournisseur d'énergie)", amount: 25 }
+        ],
       },
     ],
     savingsSummary: [
-      { difficulty: "Facile", amount: 74.0, percentage: 6.0, newTotal: 1160.78 },
-      { difficulty: "Moyen", amount: 124.0, percentage: 10.0, newTotal: 1110.78 },
-      { difficulty: "Difficile", amount: 202.45, percentage: 16.4, newTotal: 1032.33 },
+      { difficulty: "Facile", amount: 35.0, percentage: 3.0, newTotal: 1199.78 },
+      { difficulty: "Moyen", amount: 60.0, percentage: 5.0, newTotal: 1174.78 },
+      { difficulty: "Difficile", amount: 85, percentage: 7, newTotal: 1149.78 },
     ],
   }
 
@@ -986,7 +985,7 @@ export default function GyltWrapped() {
               <div className="mt-3">
                 <p className="text-sm text-gray-600 mb-2 flex items-center">
                   <span className="bg-[#4ECDC4] text-black text-xs px-2 py-0.5 rounded-full font-medium mr-2">
-                    {category.category === "Abonnements" || category.category === "Énergie / forfaits"
+                    {category.category === "Forfait téléphone/ Internet" || category.category === "Énergie / forfaits"
                       ? "Changement en 2 clics"
                       : category.category === "Livraisons"
                         ? "Sans engagement"
@@ -1004,7 +1003,7 @@ export default function GyltWrapped() {
                     setCurrentSlide(7)
                   }}
                 >
-                  {category.category === "Abonnements"
+                  {category.category === "Forfait téléphone/ Internet"
                     ? `Économiser ${category.amount}€ maintenant`
                     : category.category === "Livraisons"
                       ? "Réduire mes livraisons"
