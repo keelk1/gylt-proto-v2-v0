@@ -678,7 +678,7 @@ export default function GyltWrapped() {
         category: "Énergie (Électricité/Gaz)",
         amount: 25,
         difficulty: "Difficile",
-        items: [{ name: "Changer de fournisseur d'énergie)", amount: 25 }],
+        items: [{ name: "Changer de fournisseur d'énergie", amount: 25 }],
       },
     ],
     savingsSummary: [
