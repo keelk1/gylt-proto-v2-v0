@@ -1710,7 +1710,7 @@ export default function GyltWrapped() {
             <p className="text-black text-lg">{getPersonalityDesc()}</p>
 
             <motion.div
-              className="mt-6 inline-block bg-red text-white text-xs px-3 py-1 rounded-full"
+              className="mt-6 inline-block bg-red-500 text-white text-sm px-4 py-1.5 rounded-full"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1 }}
