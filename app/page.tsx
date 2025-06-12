@@ -2636,7 +2636,12 @@ export default function GyltWrapped() {
               className="w-full bg-[#4ECDC4] text-black font-bold py-3 px-4 rounded-lg flex items-center justify-center"
               whileHover={{ scale: 1.05, boxShadow: "0 8px 20px rgba(78, 205, 196, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => setCurrentSlide(10)}
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdGdbfitl2gvMB1MdYeIOQaIvYCaAuhlNW_LAcRBr4oy_52GQ/viewform?usp=sf_link",
+                  "_blank"
+                )
+              }
             >
               Envoyer mon feedback
             </motion.button>
