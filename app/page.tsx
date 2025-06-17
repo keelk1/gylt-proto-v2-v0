@@ -2638,7 +2638,7 @@ export default function GyltWrapped() {
               whileTap={{ scale: 0.95 }}
               onClick={() =>
                 window.open(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdGdbfitl2gvMB1MdYeIOQaIvYCaAuhlNW_LAcRBr4oy_52GQ/viewform?usp=sf_link",
+                  "https://docs.google.com/forms/d/e/1FAIpQLScHZSn4CfSWs1SvFl7keAA-zOn-kcfUwzMzO4cKEhUNuiXC9w/viewform?usp=dialog",
                   "_blank"
                 )
               }
