@@ -2643,7 +2643,7 @@ export default function GyltWrapped() {
                 )
               }
             >
-              Envoyer mon feedback
+              Envoyer mon feedback (clique ici pour y accéder)
             </motion.button>
           </motion.div>
         </div>
