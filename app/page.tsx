@@ -2588,24 +2588,9 @@ export default function GyltWrapped() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Feedback</h3>
-
-            <div className="space-y-4 mb-6">
+            <h3 className="text-xl font-bold text-gray-800 mb-4">Tu cliques, tu notes, c’est tout</h3>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Cette offre te donne-t-elle envie de changer ?
-                </label>
-                <div className="flex space-x-2">
-                  <button className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50">Oui</button>
-                  <button className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50">Non</button>
-                  <button className="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50">
-                    Je ne suis pas sûr(e)
-                  </button>
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Note ton expérience</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">On ajuste gYlt grâce à toi</label>
                 <div className="flex space-x-1 mb-2">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <motion.button
@@ -2619,18 +2604,6 @@ export default function GyltWrapped() {
                   ))}
                 </div>
               </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Qu'est-ce qui t'a plu dans cette expérience ?
-                </label>
-                <textarea
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                  rows={3}
-                  placeholder="Ton avis..."
-                ></textarea>
-              </div>
-            </div>
 
             <motion.button
               className="w-full bg-[#4ECDC4] text-black font-bold py-3 px-4 rounded-lg flex items-center justify-center"
