@@ -2591,18 +2591,6 @@ export default function GyltWrapped() {
             <h3 className="text-xl font-bold text-gray-800 mb-4">Tu cliques, tu notes, c’est tout</h3>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">On ajuste gYlt grâce à toi</label>
-                <div className="flex space-x-1 mb-2">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <motion.button
-                      key={star}
-                      className="text-2xl text-gray-300 hover:text-yellow-400"
-                      whileHover={{ scale: 1.2 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      ★
-                    </motion.button>
-                  ))}
-                </div>
               </div>
 
             <motion.button
