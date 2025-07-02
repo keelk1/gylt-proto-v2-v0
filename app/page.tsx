@@ -2371,7 +2371,6 @@ export default function GyltWrapped() {
     // Page de confirmation et infos personnelles
     <Perspective key="confirmation-perspective">
       <motion.div
-        key="confirmationPage"
         className="h-full w-full flex flex-col relative overflow-hidden"
         style={{
           background: "linear-gradient(135deg, #0088b9 0%, #00b99b 100%)",
