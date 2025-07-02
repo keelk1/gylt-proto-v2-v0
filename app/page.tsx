@@ -955,6 +955,7 @@ export default function GyltWrapped() {
         </h2>
         <p className="text-white/80">Économise jusqu'à {data.potentialSavings}€ par mois</p>
       </motion.div>
+    ));
 
       <div className="flex-1 overflow-auto px-4 pb-4 z-10 hide-scrollbar">
         <div className="space-y-4">
