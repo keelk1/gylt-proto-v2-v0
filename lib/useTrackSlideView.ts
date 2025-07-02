@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
+import { trackSlideView } from “@/lib/analytics”
 
 /**
  * Déclenche trackSlideView(slideName) la **première** fois que
