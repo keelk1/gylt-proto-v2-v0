@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import { useTrackSlideView } from "@/lib/useTrackSlideView";
 import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-motion"
 import {
@@ -117,6 +118,21 @@ export default function GyltWrapped() {
   const progress = useMotionValue(0)
   const opacity = useTransform(progress, [0, 100], [0, 1])
 
+  // juste après const opacity = useTransform(…)
+  const refIntro = useTrackSlideView("intro");
+  const refToneChoice = useTrackSlideView("tone-choice");
+  const refTotalSpent = useTrackSlideView("total-spent");
+  const refTopCategory = useTrackSlideView("top-category");
+  const refPersonality = useTrackSlideView("personality");
+  const refExpenses = useTrackSlideView("expenses");
+  const refSavings = useTrackSlideView("savings");
+  const refSavingsDetail = useTrackSlideView("savings-detail");
+  const refPartner = useTrackSlideView("partner");
+  const refAlternatives = useTrackSlideView("alternatives");
+  const refConfirmation = useTrackSlideView("confirmation");
+  const refFeedback = useTrackSlideView("feedback");
+  const refFinal = useTrackSlideView("final");
+  
   const totalSlides = 13
 
   // Set images as loaded after a short delay
@@ -844,9 +860,12 @@ export default function GyltWrapped() {
     </motion.div>
   )
 
+
+  
   // Detailed savings slide - Intégré dans la timeline principale
-  const DetailedSavingsSlide = () => (
+  const DetailedSavingsSlide = React.forwardRef<HTMLDivElement>((props, ref) => (
     <motion.div
+      ref={ref}
       key="detailedSavings"
       className="h-full w-full flex flex-col relative overflow-hidden"
       style={{
@@ -1067,6 +1086,7 @@ export default function GyltWrapped() {
     // Intro slide - Design moderne avec dégradé et formes géométriques
     <Perspective key="intro-perspective">
       <motion.div
+        ref={refIntro}
         key="intro"
         className="h-full w-full flex flex-col justify-center items-center p-6 relative overflow-hidden"
         style={{
@@ -2065,9 +2085,8 @@ export default function GyltWrapped() {
     // Insérer la nouvelle slide DetailedSavingsSlide à l'index 7 (après la slide des économies)
     // Dans le tableau slides, ajouter après la slide "savings-perspective" et avant "final-perspective":
     <Perspective key="detailed-savings-perspective">
-      <DetailedSavingsSlide />
+      <DetailedSavingsSlide ref={refSavingsDetail} />
     </Perspective>,
-
     // Page partenaire
     <Perspective key="partner-perspective">
       <motion.div
